@@ -7,8 +7,9 @@ Use the owner updater at:
 <https://conntrace.github.io/valuecam-firmware/>
 
 The site installs the current firmware over USB with ESP Web Tools. Normal
-non-erase updates preserve camera settings. `VALUECAM.BIN` is included as the
-microSD fallback image, and `SHA256SUMS` contains release checksums.
+non-erase updates preserve camera settings. `VALUECAM_SD.BIN` is the microSD
+fallback image; rename it to `VALUECAM.BIN` on the card. `SHA256SUMS` contains
+release checksums.
 
 Firmware source is maintained separately and is not published in this binary
 release repository.
