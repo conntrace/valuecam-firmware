@@ -11,7 +11,7 @@
         { "path": "bootloader.bin", "offset": 8192 },
         { "path": "partition-table.bin", "offset": 32768 },
         { "path": "ota_data_initial.bin", "offset": 73728 },
-        { "path": "valuecam.bin", "offset": 131072 }
+        { "path": "firmware.bin", "offset": 131072 }
       ]
     }
   ]
