@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0c0f">
+  <meta name="description" content="Install the latest ValueCam ESP32-P4 camera firmware over USB.">
+  <title>ValueCam Firmware Update</title>
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+</head>
+<body>
+  <main class="updater-shell">
+    <header class="topbar">
+      <div class="wordmark"><span class="signal"></span>VALUECAM</div>
+      <div class="release-tag"><span class="target-tag">ESP32-P4</span><span class="release-slash" aria-hidden="true">/</span><span id="version">RELEASE</span></div>
+    </header>
+
+    <section class="update-workbench" aria-labelledby="update-title">
+      <div class="update-copy">
+        <p class="eyebrow">OWNER FIRMWARE TOOL</p>
+        <h1 id="update-title">Update your ValueCam</h1>
+        <p class="intro">Connect the camera to this computer with its USB programming cable. The updater will install the current release and restart the camera.</p>
+
+        <ol class="steps">
+          <li><span>01</span><p>Turn the camera on and connect its USB programming port.</p></li>
+          <li><span>02</span><p>Use Chrome or Edge, then press <strong>Connect camera</strong>.</p></li>
+          <li><span>03</span><p>Select the Espressif USB JTAG/serial port and keep the cable connected until restart.</p></li>
+        </ol>
+
+        <div class="install-zone">
+          <esp-web-install-button manifest="manifest.json">
+            <button class="install-button" slot="activate" type="button">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 20h14"/></svg>
+              Connect camera
+            </button>
+            <p class="support-message" slot="unsupported">Open this page in desktop Chrome or Microsoft Edge.</p>
+            <p class="support-message" slot="not-allowed">The updater must be opened from its secure HTTPS release page.</p>
+          </esp-web-install-button>
+          <p class="preserve-note"><span class="info-mark">i</span><span>For a normal update, keep <strong>Erase device</strong> off. Erase only when recovering a camera that will not boot.</span></p>
+        </div>
+      </div>
+
+      <div class="device-bay" aria-label="ValueCam firmware preview">
+        <div class="device-frame">
+          <img src="assets/valuecam-screen.jpg" alt="ValueCam live screen running Tremor mode" width="320" height="480">
+          <div class="device-mark"><span>VALUECAM</span><span>P4</span></div>
+        </div>
+        <dl class="release-readout">
+          <div><dt>Target</dt><dd>ESP32-P4</dd></div>
+          <div><dt>Settings</dt><dd>Preserved</dd></div>
+          <div><dt>Recovery</dt><dd>USB + SD</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="recovery" aria-labelledby="recovery-title">
+      <div>
+        <p class="eyebrow">RECOVERY</p>
+        <h2 id="recovery-title">Camera not detected?</h2>
+      </div>
+      <div class="recovery-copy">
+        <p>Disconnect other serial devices, reconnect the camera directly to the computer, and try again. If automatic reset fails, hold <strong>BOOT</strong>, tap <strong>RESET</strong>, release BOOT, then reconnect.</p>
+        <p>The same release includes <code>VALUECAM.BIN</code> for the microSD fallback updater.</p>
+      </div>
+    </section>
+
+    <footer>
+      <span>VALUECAM FIRMWARE</span>
+      <a href="SHA256SUMS">SHA-256 checksums</a>
+    </footer>
+  </main>
+
+  <script>
+    fetch("manifest.json")
+      .then((response) => response.json())
+      .then((manifest) => { document.querySelector("#version").textContent = "V" + manifest.version; })
+      .catch(() => {});
+  </script>
+</body>
+</html>

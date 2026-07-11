@@ -1,0 +1,18 @@
+{
+  "name": "ValueCam",
+  "version": "1.0.0",
+  "new_install_prompt_erase": true,
+  "new_install_improv_wait_time": 0,
+  "builds": [
+    {
+      "chipFamily": "ESP32-P4",
+      "improv": false,
+      "parts": [
+        { "path": "bootloader.bin", "offset": 8192 },
+        { "path": "partition-table.bin", "offset": 32768 },
+        { "path": "ota_data_initial.bin", "offset": 73728 },
+        { "path": "valuecam.bin", "offset": 131072 }
+      ]
+    }
+  ]
+}
