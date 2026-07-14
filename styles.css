@@ -392,7 +392,6 @@ esp-web-install-button {
 .mode-browser-body {
   height: 610px;
   overflow-y: auto;
-  overscroll-behavior: contain;
   background: #0e1014;
   scrollbar-color: #4b5360 #171a20;
   scrollbar-width: thin;

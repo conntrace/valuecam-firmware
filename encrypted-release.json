@@ -14,9 +14,9 @@
           "name": "bootloader",
           "path": "bootloader.bin.enc",
           "offset": 8192,
-          "iv": "Brtv6KtyZFj1GsH8",
+          "iv": "x59nrx20tPhKgdz1",
           "sha256": "aed4c02511fe0acbb640e267daf83d309a302b10771b1f4370d5a68dbfb43ef7",
-          "encryptedSha256": "182c1a8f0c8d2e58ececa793b012bf7439ae0991b9041be8d132d8c0ee53bb8d",
+          "encryptedSha256": "3640a8914b93d555307dc6a80ea680961eb49beff2fbc4f88a1363b4512d9156",
           "size": 24160,
           "encryptedSize": 24176
         },
@@ -24,9 +24,9 @@
           "name": "partition-table",
           "path": "partition-table.bin.enc",
           "offset": 32768,
-          "iv": "LKUf4e6S0Nk8/1da",
+          "iv": "HXNP51Ly5df8X3q+",
           "sha256": "8d38cef98588f10a1f8659846e819714896e4a5c8fc0ac73cfa84a7bf5cbef75",
-          "encryptedSha256": "563038552e41cdcd0f3eacbe288eb2089152c59169a217ae85f77b1a702561c7",
+          "encryptedSha256": "9059728905c591987ec99cfb9a8cb88d861f19b2bf33d1013f38a4d6089b8faa",
           "size": 3072,
           "encryptedSize": 3088
         },
@@ -34,9 +34,9 @@
           "name": "ota-data",
           "path": "ota_data_initial.bin.enc",
           "offset": 73728,
-          "iv": "WGNd8ZJpJ94Xpme5",
+          "iv": "kHR4VJkwKH99M19e",
           "sha256": "7d2c7ac4888bfd75cd5f56e8d61f69595121183afc81556c876732fd3782c62f",
-          "encryptedSha256": "468d94bfd70f892d459e63fea8b2ba775c37424cb4051e162167b3305759e44c",
+          "encryptedSha256": "38c6cb10fce6f2c3b6086f9830f06ad8d9416438853d4d56ac21816faf438749",
           "size": 8192,
           "encryptedSize": 8208
         },
@@ -44,9 +44,9 @@
           "name": "firmware",
           "path": "firmware.bin.enc",
           "offset": 131072,
-          "iv": "ONYFNKPojtYref4+",
+          "iv": "KspG/CCUSFOlvIN3",
           "sha256": "9da8037e8b4c6fe4342594199af6a394924750da2f5b4ddc51f4fd03bfed94a5",
-          "encryptedSha256": "cce9bde8bce7d6c78d57b0a76fb39aaf92f9e932d274954c283dff40d5b36766",
+          "encryptedSha256": "262dff1b3e814511666d8f15ea95eb50c016b39bd5649d1076bab1be6352192a",
           "size": 1275616,
           "encryptedSize": 1275632
         }
