@@ -11,7 +11,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;500;600&amp;family=Manrope:wght@500;600;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
 </head>
 <body>
   <main class="updater-shell">
@@ -28,7 +27,7 @@
 
     <section class="update-workbench" id="update" aria-labelledby="update-title">
       <div class="update-copy">
-        <p class="eyebrow">OWNER FIRMWARE TOOL</p>
+        <p class="eyebrow">DISTRIBUTION FIRMWARE TOOL</p>
         <h1 id="update-title">Firmware update</h1>
         <p class="intro">Connect ValueCam to this computer with its USB programming cable. This tool installs the current release and restarts the camera.</p>
 
@@ -38,26 +37,21 @@
           <li><span>03</span><p>Select <strong>USB Single Serial</strong> and keep the cable connected until the camera restarts.</p></li>
         </ol>
 
-        <div class="install-zone">
-          <esp-web-install-button manifest="manifest.json">
-            <button class="install-button" slot="activate" type="button">
-              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0 5-5m-5 5-5-5M5 20h14"/></svg>
-              Connect camera
-            </button>
-            <p class="support-message" slot="unsupported">Open this page in desktop Chrome or Microsoft Edge.</p>
-            <p class="support-message" slot="not-allowed">The updater must be opened from its secure HTTPS release page.</p>
-          </esp-web-install-button>
-          <p class="preserve-note"><span class="info-mark">i</span><span>For a normal update, keep <strong>Erase device</strong> off. Erase only when recovering a camera that will not boot.</span></p>
+        <div class="install-zone" id="private-installer">
+          <div class="private-access-message">
+            <strong>PRIVATE UPDATE ACCESS</strong>
+            <p>The firmware files are encrypted. Open the protected ValueCam page to connect and update a camera.</p>
+          </div>
         </div>
       </div>
 
       <aside class="release-panel" aria-label="Release details">
-        <p class="release-state"><span aria-hidden="true"></span>Current owner release</p>
+        <p class="release-state"><span aria-hidden="true"></span>Current distribution release</p>
         <dl class="release-readout">
           <div><dt>Target</dt><dd>ESP32-P4</dd></div>
           <div><dt>Settings</dt><dd>Preserved</dd></div>
           <div><dt>Update</dt><dd>USB or SD</dd></div>
-          <div><dt>Modes</dt><dd>44</dd></div>
+          <div><dt>Modes</dt><dd>43</dd></div>
         </dl>
         <a class="section-jump" href="#manual">Read the camera manual <span aria-hidden="true">↓</span></a>
       </aside>
@@ -136,14 +130,14 @@
         <label class="mode-search" for="mode-search">
           <span>Find a mode</span>
           <input id="mode-search" type="search" placeholder="Try motion, color, or GAIN" autocomplete="off">
-          <small id="mode-count" aria-live="polite">44 modes</small>
+          <small id="mode-count" aria-live="polite">43 modes</small>
         </label>
       </header>
 
       <div class="mode-browser">
         <div class="mode-tabs" role="tablist" aria-label="Mode categories">
-          <button class="mode-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="mode-table" data-category="all"><i aria-hidden="true"></i>All <span>44</span></button>
-          <button class="mode-tab category-time" type="button" role="tab" aria-selected="false" aria-controls="mode-table" data-category="time"><i aria-hidden="true"></i>Time <span>8</span></button>
+          <button class="mode-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="mode-table" data-category="all"><i aria-hidden="true"></i>All <span>43</span></button>
+          <button class="mode-tab category-time" type="button" role="tab" aria-selected="false" aria-controls="mode-table" data-category="time"><i aria-hidden="true"></i>Time <span>7</span></button>
           <button class="mode-tab category-art" type="button" role="tab" aria-selected="false" aria-controls="mode-table" data-category="art"><i aria-hidden="true"></i>Art <span>8</span></button>
           <button class="mode-tab category-geo" type="button" role="tab" aria-selected="false" aria-controls="mode-table" data-category="geometry"><i aria-hidden="true"></i>Geometry <span>7</span></button>
           <button class="mode-tab category-tool" type="button" role="tab" aria-selected="false" aria-controls="mode-table" data-category="tools"><i aria-hidden="true"></i>Tools <span>6</span></button>
@@ -154,7 +148,6 @@
 
         <div class="mode-browser-body" tabindex="0" aria-label="Mode results">
           <div class="mode-table" id="mode-table" role="tabpanel">
-            <article class="mode-row" data-mode data-category="time" data-category-label="TIME"><h3>TREMOR</h3><p>Shows changes between frames as colored motion. HOLD accumulates movement; FLSH shows the newest difference only.</p><span>GAIN · DECAY · NOISE · MAP · TIME</span></article>
             <article class="mode-row" data-mode data-category="time" data-category-label="TIME"><h3>ECHO</h3><p>Keeps earlier bright parts of the frame behind the live image to create fading motion trails.</p><span>DECAY · BLEND · CON</span></article>
             <article class="mode-row" data-mode data-category="time" data-category-label="TIME"><h3>PAINT</h3><p>Keeps the brightest value seen at each pixel, allowing lights and bright objects to build up over time.</p><span>DECAY · THRESH · CON</span></article>
             <article class="mode-row" data-mode data-category="time" data-category-label="TIME"><h3>CHRONO</h3><p>Places three delayed brightness samples into separate color channels. Movement appears as split colored edges.</p><span>DELAY · GAIN · CON</span></article>
@@ -223,12 +216,12 @@
 
     <footer>
       <span>VALUECAM FIRMWARE</span>
-      <a href="SHA256SUMS">SHA-256 checksums</a>
+      <a href="ENCRYPTED_SHA256SUMS">Encrypted-file checksums</a>
     </footer>
   </main>
 
   <script>
-    fetch("manifest.json")
+    fetch("encrypted-release.json")
       .then((response) => response.json())
       .then((manifest) => { document.querySelector("#version").textContent = "V" + manifest.version; })
       .catch(() => {});

@@ -1,0 +1,5 @@
+ba66aa1110645187034b237b76e64ebc7a755d4c0b978d3c0e3b69055958f745  ./bootloader.bin.enc
+62547aeaa12bcfc998e2620399224bbfa1de9c132f734c6058a3dfd57b9cb86c  ./firmware.bin.enc
+c441c3fb28f4e6039783aa391343678dc01b229835e1e77a579483632dfc8c4a  ./ota_data_initial.bin.enc
+96143660d46604b55ff9fcb3f5dcc4932a828e8adcb5373a6cdcc1257f62a30d  ./partition-table.bin.enc
+a9c9ec3b780c7a1eb695b113cdf6e4bcf68548323bc20b9f3aa63fbfcb1732b9  encrypted-release.json

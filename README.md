@@ -1,17 +1,16 @@
-# ValueCam Firmware Updater
+# ValueCam Encrypted Release Host
 
-Public binary releases for the ValueCam ESP32-P4 camera.
+This public GitHub Pages site contains the ValueCam manual and encrypted
+43-mode distribution firmware. It does not contain TREMOR, plaintext firmware,
+the release key, or the private C source.
 
-Use the owner updater at:
+Opening <https://conntrace.github.io/valuecam-firmware/> directly shows the
+manual and release number but no install control. The password-protected
+Squarespace page uses its private key to decrypt and verify the release in the
+browser, then supplies temporary Blob URLs to ESP Web Tools.
 
-<https://conntrace.github.io/valuecam-firmware/>
+`encrypted-release.json` describes the encrypted flash parts.
+`ENCRYPTED_SHA256SUMS` verifies the public ciphertext files. The decrypted
+firmware and SD recovery image exist only in an authorized browser session.
 
-The site installs the current firmware over USB with ESP Web Tools and includes
-the brief owner manual and all 44 mode descriptions. The mode reference uses
-category tabs and a fixed scroll area so filtering does not shift the page.
-Normal non-erase updates preserve camera settings. `VALUECAM_SD.BIN` is the
-microSD fallback image; rename it to `VALUECAM.BIN` on the card. `SHA256SUMS`
-contains release checksums.
-
-Firmware source is maintained separately and is not published in this binary
-release repository.
+See `SQUARESPACE.md` for setup and the security boundary.

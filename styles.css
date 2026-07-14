@@ -154,6 +154,29 @@ esp-web-install-button {
 
 .support-message { max-width: 430px; color: #ffd0a0; line-height: 1.5; }
 
+.private-access-message {
+  max-width: 530px;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--orange);
+  background: var(--surface);
+}
+
+.private-access-message strong {
+  color: var(--orange);
+  font: 600 10px/1.4 "Chivo Mono", monospace;
+}
+
+.private-access-message p {
+  margin: 8px 0 0;
+  color: #c8cdd4;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.secure-status { margin: 0 0 14px; color: var(--muted); font: 500 10px/1.5 "Chivo Mono", monospace; }
+.recovery-download { display: inline-block; margin-top: 16px; color: var(--cyan); font: 600 11px/1.5 "Chivo Mono", monospace; text-underline-offset: 3px; }
+
 .preserve-note {
   display: flex;
   gap: 10px;
