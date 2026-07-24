@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "name": "ValueCam",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "edition": "distribution",
   "modeCount": 43,
   "algorithm": "AES-256-GCM",
@@ -14,9 +14,9 @@
           "name": "bootloader",
           "path": "bootloader.bin.enc",
           "offset": 8192,
-          "iv": "x59nrx20tPhKgdz1",
+          "iv": "Ra0d4Pj/WAMxbvI9",
           "sha256": "aed4c02511fe0acbb640e267daf83d309a302b10771b1f4370d5a68dbfb43ef7",
-          "encryptedSha256": "3640a8914b93d555307dc6a80ea680961eb49beff2fbc4f88a1363b4512d9156",
+          "encryptedSha256": "4e167a464b4529bbe01690271ff1cb954c01e162a36e8dc10fd44d398eb46218",
           "size": 24160,
           "encryptedSize": 24176
         },
@@ -24,9 +24,9 @@
           "name": "partition-table",
           "path": "partition-table.bin.enc",
           "offset": 32768,
-          "iv": "HXNP51Ly5df8X3q+",
+          "iv": "eTr00UQXQovKIm3r",
           "sha256": "8d38cef98588f10a1f8659846e819714896e4a5c8fc0ac73cfa84a7bf5cbef75",
-          "encryptedSha256": "9059728905c591987ec99cfb9a8cb88d861f19b2bf33d1013f38a4d6089b8faa",
+          "encryptedSha256": "51e92cce5e92f4dc1a3deee2bc7bff3a45c9a124c017864a4ca631919c755a9d",
           "size": 3072,
           "encryptedSize": 3088
         },
@@ -34,9 +34,9 @@
           "name": "ota-data",
           "path": "ota_data_initial.bin.enc",
           "offset": 73728,
-          "iv": "kHR4VJkwKH99M19e",
+          "iv": "m+SFsZYRwG7zp6Sa",
           "sha256": "7d2c7ac4888bfd75cd5f56e8d61f69595121183afc81556c876732fd3782c62f",
-          "encryptedSha256": "38c6cb10fce6f2c3b6086f9830f06ad8d9416438853d4d56ac21816faf438749",
+          "encryptedSha256": "330f2aa0763cfec216e951cff5d3bcc64e0cca48e5c565848193b2daabd92207",
           "size": 8192,
           "encryptedSize": 8208
         },
@@ -44,11 +44,11 @@
           "name": "firmware",
           "path": "firmware.bin.enc",
           "offset": 131072,
-          "iv": "KspG/CCUSFOlvIN3",
-          "sha256": "9da8037e8b4c6fe4342594199af6a394924750da2f5b4ddc51f4fd03bfed94a5",
-          "encryptedSha256": "262dff1b3e814511666d8f15ea95eb50c016b39bd5649d1076bab1be6352192a",
-          "size": 1275616,
-          "encryptedSize": 1275632
+          "iv": "02VM6yv+HthijX5v",
+          "sha256": "8789077916b4598ac10d14113eca95f87f9d96b63f0ec97044e76671f9c5b737",
+          "encryptedSha256": "8ee299fe0e0df4ec466df56f66159b2366460ca7f05cc87d9c4101786089ab79",
+          "size": 1270480,
+          "encryptedSize": 1270496
         }
       ]
     }
