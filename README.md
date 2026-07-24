@@ -1,7 +1,7 @@
 # ValueCam Encrypted Release Host
 
 This public GitHub Pages site contains the ValueCam manual and encrypted
-43-mode distribution firmware. It does not contain TREMOR, plaintext firmware,
+34-mode distribution firmware. It does not contain TREMOR, plaintext firmware,
 the release key, or the private C source.
 
 Opening <https://conntrace.github.io/valuecam-firmware/> directly shows the

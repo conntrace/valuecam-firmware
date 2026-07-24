@@ -3,7 +3,7 @@
   "name": "ValueCam",
   "version": "1.1.0",
   "edition": "distribution",
-  "modeCount": 43,
+  "modeCount": 34,
   "algorithm": "AES-256-GCM",
   "keyId": "3d9b2d5c928486ad",
   "builds": [
@@ -14,9 +14,9 @@
           "name": "bootloader",
           "path": "bootloader.bin.enc",
           "offset": 8192,
-          "iv": "Ra0d4Pj/WAMxbvI9",
+          "iv": "dFcfg8uhXYGHGrBO",
           "sha256": "aed4c02511fe0acbb640e267daf83d309a302b10771b1f4370d5a68dbfb43ef7",
-          "encryptedSha256": "4e167a464b4529bbe01690271ff1cb954c01e162a36e8dc10fd44d398eb46218",
+          "encryptedSha256": "60ecf09c8dd7f8eaad7186ce8f1b1e7c9c64aa6ff47ff81f6cd9e6d46c673894",
           "size": 24160,
           "encryptedSize": 24176
         },
@@ -24,9 +24,9 @@
           "name": "partition-table",
           "path": "partition-table.bin.enc",
           "offset": 32768,
-          "iv": "eTr00UQXQovKIm3r",
+          "iv": "AdHwdTTmHCnzROQ1",
           "sha256": "8d38cef98588f10a1f8659846e819714896e4a5c8fc0ac73cfa84a7bf5cbef75",
-          "encryptedSha256": "51e92cce5e92f4dc1a3deee2bc7bff3a45c9a124c017864a4ca631919c755a9d",
+          "encryptedSha256": "bed3e94f461bb78cd4683d8d8ab8ca5e8678f19a6e9795c95ccdf0d1835b8db3",
           "size": 3072,
           "encryptedSize": 3088
         },
@@ -34,9 +34,9 @@
           "name": "ota-data",
           "path": "ota_data_initial.bin.enc",
           "offset": 73728,
-          "iv": "m+SFsZYRwG7zp6Sa",
+          "iv": "VtgcjJb6a1+6cy6I",
           "sha256": "7d2c7ac4888bfd75cd5f56e8d61f69595121183afc81556c876732fd3782c62f",
-          "encryptedSha256": "330f2aa0763cfec216e951cff5d3bcc64e0cca48e5c565848193b2daabd92207",
+          "encryptedSha256": "41228647ac707aee8ec3312d28f8d88aae2705c7b7dd638f5298d39b101fe96c",
           "size": 8192,
           "encryptedSize": 8208
         },
@@ -44,9 +44,9 @@
           "name": "firmware",
           "path": "firmware.bin.enc",
           "offset": 131072,
-          "iv": "02VM6yv+HthijX5v",
+          "iv": "OlFRI6CiCvavjfXn",
           "sha256": "8789077916b4598ac10d14113eca95f87f9d96b63f0ec97044e76671f9c5b737",
-          "encryptedSha256": "8ee299fe0e0df4ec466df56f66159b2366460ca7f05cc87d9c4101786089ab79",
+          "encryptedSha256": "6a136c2a021746502339b627673267dcf223f6e050e2469483d84cc146f88eb8",
           "size": 1270480,
           "encryptedSize": 1270496
         }
