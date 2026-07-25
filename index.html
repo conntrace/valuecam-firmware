@@ -63,7 +63,7 @@
           <p class="eyebrow">CAMERA MANUAL</p>
           <h2 id="manual-title">Start shooting</h2>
         </div>
-        <p>ValueCam opens directly to the live view. These four actions cover normal use; the reference below handles the less frequent controls.</p>
+        <p>ValueCam starts at the HOME screen. Tap <strong>VALUECAM</strong> to open the camera, or <strong>SETTINGS</strong> to change sounds, brightness, and the idle timeout. Inside the camera, the house icon at the upper left returns to HOME. These actions cover normal use; the reference below handles the rest.</p>
       </header>
 
       <div class="quick-guide">
@@ -96,6 +96,7 @@
             <div><span>LIVE VIEW</span><h3 id="screen-controls-title">Screen controls</h3></div>
           </header>
           <dl class="reference-list">
+            <div><dt>HOME</dt><dd>The house icon at the upper left leaves the camera and returns to the HOME screen.</dd></div>
             <div><dt>MODE TITLE</dt><dd>Opens the category and mode picker.</dd></div>
             <div><dt>SETTINGS</dt><dd>Opens controls for the current mode. Changes are saved automatically.</dd></div>
             <div><dt>AUTO EV</dt><dd>Keep this on for normal use. Turn it off only when you want exposure to stay fixed.</dd></div>
@@ -110,10 +111,26 @@
             <div><span>CAMERA BODY</span><h3 id="button-controls-title">Physical buttons</h3></div>
           </header>
           <dl class="reference-list button-reference">
-            <div><dt>POWER</dt><dd><strong>Press:</strong> screen off or on. <strong>Hold:</strong> shut down.</dd></div>
+            <div><dt>POWER</dt><dd><strong>Hold 2 sec:</strong> turn the camera on. <strong>Press:</strong> screen off or on. <strong>Hold:</strong> shut down.</dd></div>
             <div><dt>BOOT</dt><dd><strong>Press:</strong> take a photo. <strong>Hold 4 sec:</strong> restart when released.</dd></div>
             <div><dt>RESET</dt><dd>Restarts the camera immediately. It does not erase photos or settings.</dd></div>
             <div><dt>MICROSD</dt><dd>Stores photos, AVI videos, and the optional recovery update file.</dd></div>
+          </dl>
+        </section>
+
+        <section class="reference-column" aria-labelledby="settings-controls-title">
+          <header class="reference-heading">
+            <p>03</p>
+            <div><span>HOME &rsaquo; SETTINGS</span><h3 id="settings-controls-title">Settings</h3></div>
+          </header>
+          <dl class="reference-list">
+            <div><dt>SHUTTER</dt><dd>Choose the sound the shutter makes: CLASSIC, SNAP, THOCK, BLOOP, CHIRP, ZAP, TICK, or PLATE. Each one plays as you select it.</dd></div>
+            <div><dt>POWER SND</dt><dd>The sound played when the camera starts: CHIME, RISE, BOOTUP, HELLO, PULSE, SPARK, or NONE for silence.</dd></div>
+            <div><dt>VOLUME</dt><dd>Speaker level from 10% to 100%.</dd></div>
+            <div><dt>MUTE</dt><dd>Silences every sound without losing your choices.</dd></div>
+            <div><dt>BRIGHTNESS</dt><dd>AUTO follows battery or USB power; or fix the screen from 20% to 100%.</dd></div>
+            <div><dt>TIMEOUT</dt><dd>How long the camera sits unused before it acts: NEVER, or 1 to 30 minutes.</dd></div>
+            <div><dt>ON IDLE</dt><dd>What happens at that timeout: SCREEN blanks the display, POWER shuts the camera down completely.</dd></div>
           </dl>
           <p class="reference-note"><span>TIP</span> If a mode flashes or looks washed out, turn AUTO EV on before adjusting exposure manually.</p>
         </section>
@@ -136,14 +153,13 @@
 
       <div class="mode-browser">
         <div class="mode-tabs" role="tablist" aria-label="Mode categories">
-          <button class="mode-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="mode-table" data-category="all"><i aria-hidden="true"></i>All <span>43</span></button>
-          <button class="mode-tab category-time" type="button" role="tab" aria-selected="false" aria-controls="mode-table" data-category="time"><i aria-hidden="true"></i>Time <span>7</span></button>
-          <button class="mode-tab category-art" type="button" role="tab" aria-selected="false" aria-controls="mode-table" data-category="art"><i aria-hidden="true"></i>Art <span>8</span></button>
+          <button class="mode-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="mode-table" data-category="all"><i aria-hidden="true"></i>All <span>34</span></button>
+          <button class="mode-tab category-time" type="button" role="tab" aria-selected="false" aria-controls="mode-table" data-category="time"><i aria-hidden="true"></i>Time <span>6</span></button>
+          <button class="mode-tab category-art" type="button" role="tab" aria-selected="false" aria-controls="mode-table" data-category="art"><i aria-hidden="true"></i>Art <span>7</span></button>
           <button class="mode-tab category-geo" type="button" role="tab" aria-selected="false" aria-controls="mode-table" data-category="geometry"><i aria-hidden="true"></i>Geometry <span>7</span></button>
-          <button class="mode-tab category-tool" type="button" role="tab" aria-selected="false" aria-controls="mode-table" data-category="tools"><i aria-hidden="true"></i>Tools <span>6</span></button>
-          <button class="mode-tab category-lab" type="button" role="tab" aria-selected="false" aria-controls="mode-table" data-category="lab"><i aria-hidden="true"></i>Lab <span>7</span></button>
-          <button class="mode-tab category-mind" type="button" role="tab" aria-selected="false" aria-controls="mode-table" data-category="processing"><i aria-hidden="true"></i>Processing <span>7</span></button>
-          <button class="mode-tab category-sound" type="button" role="tab" aria-selected="false" aria-controls="mode-table" data-category="sound"><i aria-hidden="true"></i>Sound <span>1</span></button>
+          <button class="mode-tab category-tool" type="button" role="tab" aria-selected="false" aria-controls="mode-table" data-category="tools"><i aria-hidden="true"></i>Tools <span>3</span></button>
+          <button class="mode-tab category-lab" type="button" role="tab" aria-selected="false" aria-controls="mode-table" data-category="lab"><i aria-hidden="true"></i>Lab <span>5</span></button>
+          <button class="mode-tab category-mind" type="button" role="tab" aria-selected="false" aria-controls="mode-table" data-category="processing"><i aria-hidden="true"></i>Processing <span>6</span></button>
         </div>
 
         <div class="mode-browser-body" tabindex="0" aria-label="Mode results">
@@ -152,7 +168,6 @@
             <article class="mode-row" data-mode data-category="time" data-category-label="TIME"><h3>PAINT</h3><p>Keeps the brightest value seen at each pixel, allowing lights and bright objects to build up over time.</p><span>DECAY · THRESH · CON</span></article>
             <article class="mode-row" data-mode data-category="time" data-category-label="TIME"><h3>CHRONO</h3><p>Places three delayed brightness samples into separate color channels. Movement appears as split colored edges.</p><span>DELAY · GAIN · CON</span></article>
             <article class="mode-row" data-mode data-category="time" data-category-label="TIME"><h3>STRATA</h3><p>Displays each row from a different recent moment. Moving subjects stretch or bend across the frame.</p><span>SPAN · DIR</span></article>
-            <article class="mode-row" data-mode data-category="time" data-category-label="TIME"><h3>SUNDIAL</h3><p>Accumulates bright trails and assigns their color from the time they were recorded.</p><span>PERIOD</span></article>
             <article class="mode-row" data-mode data-category="time" data-category-label="TIME"><h3>SLIT</h3><p>Repeatedly copies a moving strip from the live feed into one persistent image.</p><span>WIDTH · STEP · DIR</span></article>
             <article class="mode-row" data-mode data-category="time" data-category-label="TIME"><h3>STROBE</h3><p>Compares consecutive frames and displays only areas with enough movement.</p><span>THRESH · LOOK</span></article>
 
@@ -162,7 +177,6 @@
             <article class="mode-row" data-mode data-category="art" data-category-label="ART"><h3>PALETTE</h3><p>Reduces blocks of the image to the nearest color in a selected limited palette.</p><span>SIZE · PAL · MATCH</span></article>
             <article class="mode-row" data-mode data-category="art" data-category-label="ART"><h3>ASCII</h3><p>Replaces image blocks with text characters selected by brightness.</p><span>SIZE · INK</span></article>
             <article class="mode-row" data-mode data-category="art" data-category-label="ART"><h3>INK</h3><p>Runs edge detection and draws detected outlines as ink on a plain background.</p><span>THRESH · INK</span></article>
-            <article class="mode-row" data-mode data-category="art" data-category-label="ART"><h3>HATCH</h3><p>Uses diagonal, vertical, and horizontal lines to represent progressively darker tones.</p><span>SPACING · INK</span></article>
             <article class="mode-row" data-mode data-category="art" data-category-label="ART"><h3>POSTER</h3><p>Reduces each color channel to a small number of levels for flat color regions.</p><span>LEVELS · SAT</span></article>
 
             <article class="mode-row" data-mode data-category="geometry" data-category-label="GEOMETRY"><h3>KALEID</h3><p>Folds the live image into mirrored wedges around the center.</p><span>SEGMENTS</span></article>
@@ -175,14 +189,8 @@
 
             <article class="mode-row" data-mode data-category="tools" data-category-label="TOOLS"><h3>PEAK</h3><p>Highlights high-contrast edges to help judge focus.</p><span>THRESH · COLOR</span></article>
             <article class="mode-row" data-mode data-category="tools" data-category-label="TOOLS"><h3>FCOLOR</h3><p>Replaces brightness ranges with exposure colors so dark, middle, and clipped areas are easy to identify.</p><span>STYLE</span></article>
-            <article class="mode-row" data-mode data-category="tools" data-category-label="TOOLS"><h3>HISTO</h3><p>Overlays a brightness or RGB histogram on the live image.</p><span>CHAN</span></article>
-            <article class="mode-row" data-mode data-category="tools" data-category-label="TOOLS"><h3>ZEBRA</h3><p>Places diagonal stripes over pixels above the selected brightness level.</p><span>LEVEL · COLOR</span></article>
-            <article class="mode-row" data-mode data-category="tools" data-category-label="TOOLS"><h3>WAVEFRM</h3><p>Displays brightness or RGB levels by image column as an overlay or full-screen scope.</p><span>CHAN · VIEW</span></article>
             <article class="mode-row" data-mode data-category="tools" data-category-label="TOOLS"><h3>MONO</h3><p>Creates monochrome output from luma or one color channel, with optional tone and contrast.</p><span>FILTER · TONE · CON</span></article>
-
-            <article class="mode-row" data-mode data-category="lab" data-category-label="LAB"><h3>FEEDBK</h3><p>Scales, rotates, and mixes the previous output with the current frame.</p><span>ZOOM · SPIN · MIX</span></article>
             <article class="mode-row" data-mode data-category="lab" data-category-label="LAB"><h3>SEDMNT</h3><p>Deposits selected pixels into a stored image that moves downward and fades.</p><span>DEPOSIT · FADE</span></article>
-            <article class="mode-row" data-mode data-category="lab" data-category-label="LAB"><h3>TOPO</h3><p>Converts brightness bands into contour lines or filled terrain colors.</p><span>LEVELS · STYLE</span></article>
             <article class="mode-row" data-mode data-category="lab" data-category-label="LAB"><h3>VANISH</h3><p>Builds a slowly changing background estimate so temporary moving subjects disappear or show separately.</p><span>RATE · VIEW</span></article>
             <article class="mode-row" data-mode data-category="lab" data-category-label="LAB"><h3>RIPPLE</h3><p>Uses motion to create simulated waves that displace the live image.</p><span>SPLASH · DAMP</span></article>
             <article class="mode-row" data-mode data-category="lab" data-category-label="LAB"><h3>EMBER</h3><p>Converts frame-to-frame movement into a rising heat simulation over the live view.</p><span>FUEL · COOL</span></article>
@@ -192,11 +200,8 @@
             <article class="mode-row" data-mode data-category="processing" data-category-label="PROCESSING"><h3>NEWTON</h3><p>Maps brightness and distance from center into repeating spectral rings.</p><span>FREQ · MOD</span></article>
             <article class="mode-row" data-mode data-category="processing" data-category-label="PROCESSING"><h3>HILBRT</h3><p>Redraws the image as one continuous Hilbert curve with thickness based on brightness.</p><span>ORDER · INK</span></article>
             <article class="mode-row" data-mode data-category="processing" data-category-label="PROCESSING"><h3>GENLOS</h3><p>Repeatedly reduces color levels and smears color sideways while slowly mixing in the live frame.</p><span>LOSS · REFRESH</span></article>
-            <article class="mode-row" data-mode data-category="processing" data-category-label="PROCESSING"><h3>PXSORT</h3><p>Reorders pixels by brightness inside horizontal or vertical bands.</p><span>BAND · BINS · AXIS · ORDER</span></article>
             <article class="mode-row" data-mode data-category="processing" data-category-label="PROCESSING"><h3>SOLAR</h3><p>Inverts color channels above an adjustable threshold.</p><span>THRESH · LOOK</span></article>
             <article class="mode-row" data-mode data-category="processing" data-category-label="PROCESSING"><h3>GLITCH</h3><p>Applies controlled scan-line shifts, bit reduction, or horizontal frame tears.</p><span>AMOUNT · STYLE</span></article>
-
-            <article class="mode-row" data-mode data-category="sound" data-category-label="SOUND"><h3>RESONA</h3><p>Uses the built-in microphone to shift image rows, change brightness, or do both.</p><span>AMOUNT · REACT</span></article>
             <p class="empty-modes" id="empty-modes" hidden>No modes match this filter.</p>
           </div>
         </div>
